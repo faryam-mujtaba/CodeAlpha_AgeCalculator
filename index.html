@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | CodeAlpha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="calculator-card">
+            <h1>Age Calculator</h1>
+            <p class="subtitle">Enter your date of birth to calculate your exact age.</p>
+
+            <form id="ageForm">
+                <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <button type="submit">Calculate Age</button>
+            </form>
+
+            <p id="errorMessage"></p>
+
+            <div id="result" class="result-box">
+                <h2>Your Age Is</h2>
+                <p>
+                    <span id="years">0</span> Years,
+                    <span id="months">0</span> Months,
+                    <span id="days">0</span> Days
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
