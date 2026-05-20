@@ -7,6 +7,10 @@ const yearsOutput = document.getElementById("years");
 const monthsOutput = document.getElementById("months");
 const daysOutput = document.getElementById("days");
 
+// Set today's date as the maximum selectable date
+const todayDate = new Date().toISOString().split("T")[0];
+dobInput.setAttribute("max", todayDate);
+
 ageForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
